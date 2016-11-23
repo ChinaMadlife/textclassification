@@ -1,0 +1,64 @@
+﻿ 日月 光华 - - SE 精华区 文章 阅读 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ ASDAdaptiveSoftwareDevelopment 自 适应 软件开发 
+ AFEApplicationFamilyEngineering 应用 族 工程 
+ ASEApplicationSystemEngineering 应用 系统工程 
+ BOABasicObjectAdaptor 基本 对象 适配器 
+ BMPBean - ManagedPersistence 构件 管理 的 持久性 
+ BEBusinessEngineering 业务 工程 
+ CMMCapabilityMaturityModel 能力 成熟度 模型 
+ CRCClass — Responsibility — Collaborator 类 — 责任 — 协作者 
+ CDRCommonDataRepresentation 公共数据 表示 
+ CORBACommonObjectRequestBrokerArchitecture 公共对象 请求 代理 体系结构 
+ CBDComponentBasedDevelopment 基于 构件 开发 
+ CIDLComponentImplementationDefinitionLanguage 构件实现 定义语言 
+ CIFComponentImplementationFramework 构件实现 框架 
+ CSEComponentSystemEngineering 构件 系统工程 
+ CMPContainer - ManagedPersistence 容器 管理 的 持久性 
+ CCMCORBAComponentModelCORBA 构件 模型 
+ CCMCORBAcomponentmodelCORBA 构件 模型 
+ DNADistributedinterNetArchitecture 分布 互联网 体系结构 
+ DTCDistributedTransactionCoordinator 分布式 事务 协调 程序 
+ DSSADomain - SpecificSoftwareArchitecture 领域 特定 的 软件体系结构 
+ DDEDynamicDataExchange 动态 数据交换 
+ DIIDynamicInvocationInterface 动态 激活 接口 
+ DLLDynamicLinkLiberary 动态 连接 库 
+ DSIDynamicSkeletonInterface 动态 骨架 接口 
+ XPeXtremeProgramming 极值 程序设计 
+ GIOPGeneralInter - ORBProtocolORB 间通信 的 标准协议 
+ GUIDGloballyUniqueIdentifier 全局 唯一 标识符 
+ IMDBInMemoryDataBase 驻留 内存 数据库 
+ IDLInterfaceDefinitionLanguage 接口定义 语言 
+ IIDInterfaceIdentifier 接口 标识符 
+ IIOPInternetInter - ORBProtocal 因特网 ORB 互联 协议 
+ JITAJustInTimeActivation 即时 激活 机制 
+ LPCLocalProcedureCall 本地 过程 调用 
+ MSMQMicrosftMessageQueueServer 微软 消息 队列 服务 
+ MIDLMicrosoftInterfaceDefinitionLanguage 微软 接口定义 语言 
+ MTSMicrosoftTransactionServer 微软 事务 服务器 
+ ODLObjectDescriptionLanguage 对象 描述语言 
+ OMAObjectManagementAchitecture 对象 管理 体系结构 
+ OMGObjectManagementGroup 国际 对象 管理 组织 
+ OMGObjectManagemnetGroup 对象 管理 组织 
+ OMTObjectModelingTechnology 对象 建模 技术 
+ OOSEObjectOrientedSoftwareEngineering 面向对象 软件工程 
+ ORBObjectRequestBroker 对象 请求 代理 
+ OOAObjectOrientedAnalysis 面向对象分析 
+ OODObjectOrientedDesign 面向对象 设计 
+ OSFOpenSoftwareFoundation 开放 软件 基金会 
+ POAPortableObjectAdapter 易 移植 的 对象 适配器 
+ POAPortableObjectAdaptor 易 移植 对象 适配器 
+ RPCRemoteProcedureCall 远程 过程 调用 
+ RSEBReuse - DrivenSoftwareEngineeringBusiness 复用 驱动 的 软件工程 业务 
+ SCMServiceControlManager 服务 控制 管理程序 
+ sharedaggregation 共享 聚集 
+ SPMSharedPropertyManager 共享 属性 管理程序 
+ SPICESoftwareProcessImprovementandCapabilitydEtermine 软件 过程 改进 与 能 
+ 力 确定 
+ UMLUnifiedModelingLanguage 统一 的 建模语言 
+ UUIDUniversallyUniqueIdentifier 通用 统一 标识符 
+ 
+ 
+ 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ [ 返回 上 一页 ] [ 本 讨论区 ]

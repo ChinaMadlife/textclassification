@@ -1,0 +1,43 @@
+﻿ 日月 光华 - - Hardware 精华区 文章 阅读 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ 发信人 : BorninmaY ( 夏日 悠悠 ) , 信 区 : Hardware 
+ 标题 : Re : 我 的 USB 接口 怎么 接 ? 
+ 发信站 : 日月 光华 ( 2002 年 04 月 09 日 23 : 28 : 45 星期二 ) , 站 内 信件 
+ 
+ Pin # SignalNameDescription 
+ 1VREG _ FP _ USBPWR0FrontPanelUSBPower ( Ports0 , 1 ) 
+ 2VREG _ FP _ USBPWR0FrontPanelUSBPower ( Ports0 , 1 ) 
+ 3USB _ FP _ P0 - FrontPanelUSBPort0NegativeSignal 
+ 4USB _ FP _ P1 - FrontPanelUSBPort1NegativeSignal 
+ 5USB _ FP _ P0 + FrontPanelUSBPort0PositiveSignal 
+ 6USB _ FP _ P1 + FrontPanelUSBPort1PositiveSignal 
+ 7GNDGround 
+ 8GNDGround 
+ 9 无 无 
+ 10USB _ FP _ OC0FrontPanelUSBOvercurrentsignal ( Ports0 , 1 ) 
+ 
+ 【 在 RegularHand ( 普通 朋友 ) 的 大作 中 提到 : 】 
+ : 偶 机箱 前面板 上 有 两个 模块 可以 安装 USB 接口 
+ : 
+ : 另外 偶用 的 主板 说明书 上 有 主板 上 的 接口 的 信号 名称 
+ : 1 : VREG _ FP _ USBPWR0 
+ : 2 : VREGFPUSBPWR0 
+ : 3 : USB _ FP _ P0 - 
+ : 4 : USB _ FP _ P1 - 
+ : 5 : USB _ FP _ P0 + 
+ : 6 : USB _ FP _ P1 + 
+ : 7 : Ground 
+ : ................. （ 以下 省略 ） 
+ 
+ - - 
+ 我 爱 灌水 我 爱 灌水 我 爱 灌水 我 爱 灌水 
+ 我 爱 灌水 我 爱 灌水 我 爱 灌水 我 爱 灌水 
+ 我 爱 灌水 我 爱 灌水 我 爱 灌水 我 爱 灌水 
+ 我 爱 灌水 我 爱 灌水 我 爱 灌水 我 爱 灌水 
+ 我 爱 灌水 我 爱 灌水 我 爱 灌水 我 爱 灌水 
+ 我 爱 灌水 我 爱 灌水 我 爱 灌水 我 爱 灌水 
+ ※ 来源 : · 日月 光华 bbs . fudan . edu . cn · [ FROM : 10.83 . 4.123 ] 
+ 
+ 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ [ 返回 上 一页 ] [ 本 讨论区 ]
