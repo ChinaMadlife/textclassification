@@ -1,65 +1,65 @@
 import sys  
 import os 
-#ÒıÈëBunchÀà
+#å¼•å…¥Bunchç±»
 from sklearn.datasets.base import Bunch
-#ÒıÈë³Ö¾Ã»¯Àà
+#å¼•å…¥æŒä¹…åŒ–ç±»
 import cPickle as pickle
 from sklearn import feature_extraction  
 from sklearn.feature_extraction.text import TfidfTransformer  
 from sklearn.feature_extraction.text import TfidfVectorizer  
 from sklearn.naive_bayes import MultinomialNB
 
-# ÅäÖÃutf-8Êä³ö»·¾³
+# é…ç½®utf-8è¾“å‡ºç¯å¢ƒ
 #reload(sys)
 #sys.setdefaultencoding('utf-8')
 
-# ¶ÁÈ¡ÎÄ¼ş
+# è¯»å–æ–‡ä»¶
 def readfile(path):
 	fp = open(path,"rb")
 	content = fp.read()
 	fp.close()
 	return content
 		
-#¼ÆËãÑµÁ·ÓïÁÏµÄtfidfÈ¨Öµ²¢³Ö¾Ã»¯Îª´Ê´ü
+#è®¡ç®—è®­ç»ƒè¯­æ–™çš„tfidfæƒå€¼å¹¶æŒä¹…åŒ–ä¸ºè¯è¢‹
 
-#¶ÁÈ¡bunch¶ÔÏó
+#è¯»å–bunchå¯¹è±¡
 def readbunchobj(path):
 	file_obj = open(path, "rb")
 	bunch = pickle.load(file_obj) 
 	file_obj.close()
 	return bunch
-#Ğ´Èëbunch¶ÔÏó	
+#å†™å…¥bunchå¯¹è±¡	
 def writebunchobj(path,bunchobj):
 	file_obj = open(path, "wb")
 	pickle.dump(bunchobj,file_obj) 
 	file_obj.close()	
 
 
-#¶ÁÈ¡Í£ÓÃ´Ê±í
+#è¯»å–åœç”¨è¯è¡¨
 stopword_path="C:/Users/user/Desktop/chapter02/train_word_bag/hlt_stop_words.txt"
 stpwrdlst=readfile(stopword_path).splitlines()
 
 
-#µ¼Èë·Ö´ÊºóµÄbunchd¶ÔÏó
+#å¯¼å…¥åˆ†è¯åçš„bunchdå¯¹è±¡
 path="C:/Users/user/Desktop/chapter02/bunch_data/bunch_set.dat"
 bunch=readbunchobj(path)
 
-#¹¹½¨tf-idf´ÊÏòÁ¿¶ÔÏó
+#æ„å»ºtf-idfè¯å‘é‡å¯¹è±¡
 tfidfspace=Bunch(target_name=bunch.target_name,label=bunch.label,filenames=bunch.filenames,tdm=[],vocabulary={})
 
 
-#¹¹½¨tf-idf¾ØÕó£¬²¢±£´æ×ÖµäÎÄ¼ş
+#æ„å»ºtf-idfçŸ©é˜µï¼Œå¹¶ä¿å­˜å­—å…¸æ–‡ä»¶
 vectorizer=TfidfVectorizer(stop_words=stpwrdlst,sublinear_tf=True,max_df=0.5)
 
 X_train_counts=vectorizer.fit_transform(bunch.contents)
 tfidfspace.vocabulary=vectorizer.vocabulary_
 
 test=readfile("C:/Users/user/Desktop/chapter02/done_test_small/sports/11.txt").splitlines()
-#11Õâ¸öÎÄ±¾ÊÇÎÒµ¥¶À´ÓÍøÉÏÏÂÔØµÄ£¬²¢Ã»ÓĞÔÚÑµÁ·¼¯Àï£¬È»¶ø½á¹û·ÖÀàÊÇsports£¬»¹ÊÇºÜ³É¹¦µÄ
-x_new_counts=vectorizer.transform(test)  #´Ë´¦ÓÃtransform¶ø²»ÓÃfit_transform¿ÉÒÔ¹²Ïí×Öµä£¬±£Ö¤x_new_countsºÍX_train_countsµÄÁĞÊıÒ»Ñù
+#11è¿™ä¸ªæ–‡æœ¬æ˜¯æˆ‘å•ç‹¬ä»ç½‘ä¸Šä¸‹è½½çš„å¹¶åˆ†è¯ï¼Œå¹¶æ²¡æœ‰åœ¨è®­ç»ƒé›†é‡Œï¼Œç„¶è€Œç»“æœåˆ†ç±»æ˜¯sportsï¼Œè¿˜æ˜¯å¾ˆæˆåŠŸçš„
+x_new_counts=vectorizer.transform(test)  #æ­¤å¤„ç”¨transformè€Œä¸ç”¨fit_transformå¯ä»¥å…±äº«å­—å…¸ï¼Œä¿è¯x_new_countså’ŒX_train_countsçš„åˆ—æ•°ä¸€æ ·
 
-clf=MultinomialNB(alpha=0.001).fit(X_train_counts,bunch.label)  #alphaÈ¡0.001À´½øĞĞÆ½»¬
-predicted=clf.predict(x_new_counts)  #½øĞĞ·ÖÀàÔ¤²â
+clf=MultinomialNB(alpha=0.001).fit(X_train_counts,bunch.label)  #alphaå–0.001æ¥è¿›è¡Œå¹³æ»‘
+predicted=clf.predict(x_new_counts)  #è¿›è¡Œåˆ†ç±»é¢„æµ‹
 
 print predicted
 
