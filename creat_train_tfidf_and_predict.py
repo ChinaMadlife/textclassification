@@ -7,6 +7,7 @@ import cPickle as pickle
 from sklearn import feature_extraction  
 from sklearn.feature_extraction.text import TfidfTransformer  
 from sklearn.feature_extraction.text import TfidfVectorizer  
+from sklearn.naive_bayes import MultinomialNB
 
 # 配置utf-8输出环境
 #reload(sys)
@@ -51,21 +52,16 @@ tfidfspace=Bunch(target_name=bunch.target_name,label=bunch.label,filenames=bunch
 vectorizer=TfidfVectorizer(stop_words=stpwrdlst,sublinear_tf=True,max_df=0.5)
 
 X_train_counts=vectorizer.fit_transform(bunch.contents)
-tf_transformer=TfidfTransformer().fit(X_train_counts)
-tfidfspace.tdm=tf_transformer.transform(X_train_counts)
 tfidfspace.vocabulary=vectorizer.vocabulary_
 
+test=readfile("C:/Users/user/Desktop/chapter02/done_test_small/sports/11.txt").splitlines()
+#11这个文本是我单独从网上下载的，并没有在训练集里，然而结果分类是sports，还是很成功的
+x_new_counts=vectorizer.transform(test)  #此处用transform而不用fit_transform可以共享字典，保证x_new_counts和X_train_counts的列数一样
 
-#创建词袋持久化
-space_path="C:/Users/user/Desktop/chapter02/train_word_bag/tfdifspace.dat"
-writebunchobj(space_path,tfidfspace)
+clf=MultinomialNB(alpha=0.001).fit(X_train_counts,bunch.label)  #alpha取0.001来进行平滑
+predicted=clf.predict(x_new_counts)  #进行分类预测
 
-print "tf-idf词向量空间创建成功"
-
-
-
-
-
+print predicted
 
 
 
